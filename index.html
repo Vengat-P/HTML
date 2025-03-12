@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="vengat" />
+    <meta name="description" content="day 1 html class" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,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"
+      type="image/x-icon"
+    />
+    <title>stars of heros</title>
+  </head>
+  <body>
+    <header>
+      <h1>kollywood Stars</h1>
+      <div>
+        <input
+          type="text"
+          name="hero name"
+          id="heroname"
+          placeholder="search hero's name"
+        />
+        <button>Search</button>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#About" target="_self">about</a></li>
+          <li><a href="#Ajith">Ajith</a></li>
+          <li><a href="#Vijay">Vijay</a></li>
+          <li><a href="#Suriya">Suriya</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <article id="Ajith">
+        <section>
+          <h1>Ajith</h1>
+          <figure>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Ajith_Kumar_%28actor%2Cracer%29.jpg/220px-Ajith_Kumar_%28actor%2Cracer%29.jpg"
+              alt="Ajith image"
+            />
+          </figure>
+          <p>
+            Ajith Kumar is an Indian actor who works mainly in Tamil cinema.
+            Apart from a small role in the 1990 Tamil film En Veedu En Kanavar,
+            <br />[1] his professional career began three years later with his
+            debut as a lead actor in Tamil cinema with Amaravathi (1993). <br />
+            Despite being a moderate success, the film helped him obtain more
+            modelling assignments. He followed it up the same year with
+            <br />Prema Pusthakam, his only Telugu film to date.[2][3] After
+            Amaravathi's release, Ajith opted against acting, and instead tried
+            pursuing <br />
+            a career in auto racing. While training for an amateur race, he
+            injured his back and underwent three major surgeries, leaving him
+            bed-ridden <br />
+            for a year and a half.[4] After recovering from the injury, he
+            played supporting roles in Paasamalargal (1994) and Pavithra
+            (1994).[4][5] After this <br />, he co-starred with Vijay in Rajavin
+            Parvaiyile (1995). That same year, he had his breakthrough with the
+            romantic thriller Aasai. <br />His performance earned him critical
+            acclaim and established him as an up-and-coming actor in Tamil
+            cinema.
+            <a
+              href="https://en.wikipedia.org/wiki/Ajith_Kumar_filmography"
+              target="_blank"
+              >see more</a
+            >
+          </p>
+        </section>
+        <br />
+        <table border="2">
+          <caption>
+            <strong>List of Movies</strong>
+          </caption>
+          <thead>
+            <tr>
+              <th>Movie name</th>
+              <th>Director</th>
+              <th>Music Director</th>
+              <th>Released year</th>
+              <th>more Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Vidamuyarchi</td>
+              <td>Magizh thiru meni</td>
+              <td>Aniruth</td>
+              <td>2025</td>
+              <td>
+                <a
+                  href="https://en.wikipedia.org/wiki/Vidaamuyarchi"
+                  target="_blank"
+                  >click for more</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Thunivu</td>
+              <td rowspan="3">H.vinoth</td>
+              <td>Ghibran</td>
+              <td>2023</td>
+              <td>
+                <a href="https://en.wikipedia.org/wiki/Thunivu" target="_blank"
+                  >click for more</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Valimai</td>
+              <td rowspan="2">Yuvan shankar Raja</td>
+              <td>2022</td>
+              <td>
+                <a href="https://en.wikipedia.org/wiki/Valimai" target="_blank"
+                  >click for more</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Nerkonda parvai</td>
+              <td>2019</td>
+              <td>
+                <a
+                  href="https://en.wikipedia.org/wiki/Nerkonda_Paarvai"
+                  target="_blank"
+                  >click for more</a
+                >
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="5">
+                <marquee behavior="moving" direction="right to left">
+                  <strong
+                    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Latest
+                    movies details acted by Ajith kumar</strong
+                  ></marquee
+                >
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+      <hr />
+      <article id="Vijay">
+        <section>
+          <h1>Vijay</h1>
+          <figure>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Vijay_at_Protest_of_the_Nadigar_Sangam.jpg/220px-Vijay_at_Protest_of_the_Nadigar_Sangam.jpg"
+              alt="Vijay image"
+            />
+          </figure>
+          <p>
+            Joseph Vijay Chandrasekhar (born 22 June 1974), known professionally
+            as Vijay, is an Indian actor and playback singer <br />
+            who works in Tamil cinema. In a career spanning over three decades,
+            Vijay has acted in 68 films and is one of the most <br />
+            commercially successful actors in Tamil cinema with multiple films
+            amongst the highest-grossing Tamil films of all time <br />
+            and is amongst the highest paid actors in India. He has won several
+            awards as an actor. Referred to as "Thalapathy" <br />
+            (transl.commander), Vijay has a significant fan following.
+            <a
+              href="https://en.wikipedia.org/wiki/Vijay_(actor)"
+              target="_blank"
+              >see more</a
+            >
+          </p>
+        </section>
+        <br />
+        <table border="2">
+          <caption>
+            <strong>List of Movies</strong>
+          </caption>
+          <thead>
+            <tr>
+              <th>Movie name</th>
+              <th>Director</th>
+              <th>Music Director</th>
+              <th>Released year</th>
+              <th>more Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>The Greatest Of All Time</td>
+              <td>Venkat prabhu</td>
+              <td>Yuvan Shankar Raja</td>
+              <td>2024</td>
+              <td>
+                <a
+                  href="https://en.wikipedia.org/wiki/The_Greatest_of_All_Time"
+                  target="_blank"
+                  >Click for more</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Leo</td>
+              <td>Lokesh Kanagaraj</td>
+              <td>Aniruth Ravichandar</td>
+              <td>2023</td>
+              <td>
+                <a
+                  href="https://en.wikipedia.org/wiki/Leo_(2023_Indian_film)"
+                  target="_blank"
+                  >Click for more</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Varisu</td>
+              <td>Vamsi Paidipally</td>
+              <td>Thaman S</td>
+              <td>2023</td>
+              <td>
+                <a href="https://en.wikipedia.org/wiki/Varisu" target="_blank"
+                  >Click for more</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Beast</td>
+              <td>Nelson Dilipkumar</td>
+              <td>Aniruth Ravichandar</td>
+              <td>2022</td>
+              <td>
+                <a
+                  href="https://en.wikipedia.org/wiki/Beast_(2022_Indian_film)"
+                  target="_blank"
+                  >Click for more</a
+                >
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="5">
+                <marquee behavior="moving" direction="right to left">
+                  <strong
+                    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Latest
+                    movies details acted by Vijay</strong
+                  ></marquee
+                >
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+      <hr />
+      <article id="Suriya">
+        <section>
+          <h1>Suriya</h1>
+          <figure>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/66/Suriya_at_Kanguva_press_conference_%28cropped%29.jpg"
+              alt=""
+            />
+          </figure>
+          <p>
+            Saravanan Sivakumar (born 23 July 1975), known by his stage name
+            Suriya, is an Indian actor and film producer. <br />
+            He primarily works in Tamil cinema, where he is one of the
+            highest-paid actors. Considered one of the finest <br />
+            actors of Indian cinema, Suriya has received numerous accolades
+            including two National Film Awards, <br />
+            six Filmfare Awards South and five Tamil Nadu State Film Awards. He
+            has featured six times in the Celebrity <br />
+            100 list of Forbes India, which takes into account the earnings of
+            Indian celebrities.
+            <a href="https://en.wikipedia.org/wiki/Suriya" target="_blank"
+              >see more</a
+            >
+          </p>
+        </section>
+        <br />
+        <table border="2">
+          <caption>
+            <strong>List of movies</strong>
+          </caption>
+          <thead>
+            <tr>
+              <td>Movie name</td>
+              <td>Director</td>
+              <td>Music Director</td>
+              <td>Released year</td>
+              <td>More Details</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kanguva</td>
+              <td>Siva</td>
+              <td>Devi Sri Prasad</td>
+              <td>2024</td>
+              <td>
+                <a href="https://en.wikipedia.org/wiki/Kanguva" target="_blank"
+                  >Click for more</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Etharkkum Thunindhavan</td>
+              <td>Pandiraj</td>
+              <td>D.Imman</td>
+              <td>2022</td>
+              <td>
+                <a
+                  href="https://en.wikipedia.org/wiki/Etharkkum_Thunindhavan"
+                  target="_blank"
+                  >Click for more</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Jai Bhim</td>
+              <td>TJ Gnanavel</td>
+              <td>Sean Roldan</td>
+              <td>2021</td>
+              <td>
+                <a
+                  href="https://en.wikipedia.org/wiki/Jai_Bhim_(film)"
+                  target="_blank"
+                  >Click for more</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Soorarai Pottru</td>
+              <td>Sudha Kongara Prasad</td>
+              <td>G.V.Prakash Kumar</td>
+              <td>2020</td>
+              <td>
+                <a
+                  href="https://en.wikipedia.org/wiki/Soorarai_Pottru"
+                  target="_blank"
+                  >Click for more</a
+                >
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="5">
+                <marquee behavior="moving" direction="right to left">
+                  <strong
+                    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Latest
+                    movies details acted by Suriya</strong
+                  ></marquee
+                >
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+    </main>
+    <hr />
+    <footer id="About">
+      <h3>contact details</h3>
+      <h3>mobile number</h3>
+      <mark>
+        <strong>&copy;Vengat</strong>
+      </mark>
+      <br />
+      <a href="#" target="_top"><button>Back to Top</button></a>
+    </footer>
+  </body>
+</html>
